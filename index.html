@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xeno OG Fortnite</title>
+    <meta
+      name="description"
+      content="Fortnite OG Revival community website with updates, setup steps, and FAQ."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0d101f;
+        --bg-soft: #141a33;
+        --card: #1b2342;
+        --text: #f2f4ff;
+        --muted: #b3bcde;
+        --primary: #5a8cff;
+        --accent: #18d2f7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, Arial, sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top, #1f2b58 0%, var(--bg) 55%);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: min(1100px, 92%);
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(8px);
+        background: rgba(13, 16, 31, 0.7);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 0;
+      }
+
+      .logo {
+        font-family: Rajdhani, sans-serif;
+        font-size: 1.5rem;
+        margin: 0;
+        letter-spacing: 0.08em;
+      }
+
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 1rem;
+      }
+
+      nav a:hover {
+        color: var(--text);
+      }
+
+      .hero {
+        padding: 5rem 0 4rem;
+      }
+
+      .hero-content {
+        max-width: 700px;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        letter-spacing: 0.12em;
+        font-size: 0.85rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Rajdhani, sans-serif;
+        line-height: 1.15;
+        margin: 0 0 0.8rem;
+      }
+
+      h1 {
+        font-size: clamp(2.1rem, 5vw, 4rem);
+      }
+
+      h2 {
+        font-size: clamp(1.7rem, 3vw, 2.5rem);
+      }
+
+      .section {
+        padding: 3.5rem 0;
+      }
+
+      .alt {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.03) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+
+      .cards {
+        margin-top: 1.6rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .card,
+      .status-box,
+      details {
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 1rem 1.1rem;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 1.2rem;
+      }
+
+      .steps {
+        padding-left: 1.2rem;
+      }
+
+      .button {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 0.65rem 1.05rem;
+        text-decoration: none;
+        border: 1px solid transparent;
+        font-weight: 600;
+        transition: 150ms ease;
+        cursor: pointer;
+      }
+
+      .button.small {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+      }
+
+      .primary {
+        background: linear-gradient(90deg, var(--primary), #7ba2ff);
+        color: #06113a;
+      }
+
+      .ghost {
+        border-color: rgba(255, 255, 255, 0.25);
+        color: var(--text);
+        background: transparent;
+      }
+
+      .hero-actions {
+        margin-top: 1.2rem;
+        display: flex;
+        gap: 0.7rem;
+      }
+
+      details {
+        margin-top: 0.8rem;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .site-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 1.5rem 0 2rem;
+        color: var(--muted);
+      }
+
+      .tiny {
+        font-size: 0.85rem;
+        margin-top: 0.3rem;
+      }
+
+      @media (max-width: 820px) {
+        .cards,
+        .split {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <p class="logo">OG REVIVAL</p>
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#join">Join</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <p class="eyebrow">CHAPTER 2 SEASON 2 VIBES, MODERN STABILITY</p>
+          <h1>Xeno OG Fortnite</h1>
+          <p>
+            Relive the classic map, old-school loot pool, and community events
+            with our fan-run revival project.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#join">Play Now</a>
+            <a
+              class="button primary"
+              href="https://cdn.cbn.lol/12.41"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Build
+            </a>
+            <a class="button ghost" href="#features">See Features</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2>Why Players Join</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Classic Gameplay</h3>
+              <p>
+                Balanced OG-era weapons, movement, and map flow for the true
+                old Fortnite feel.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Active Events</h3>
+              <p>
+                Solo cups, and throwback LTMs hosted by the
+                community staff.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Fast Updates</h3>
+              <p>
+                Frequent patches, anti-cheat improvements, and transparent dev
+                notes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section alt">
+        <div class="container split">
+          <div>
+            <h2>How To Start</h2>
+            <ol class="steps">
+              <li>Join our Discord community.</li>
+              <li>Download the current client build.</li>
+              <li>Follow the quick setup guide and launch.</li>
+            </ol>
+            <a
+              class="button primary"
+              href="https://cdn.discordapp.com/attachments/1488973067781931078/1488981591681142927/xeno_ogfn.zip?ex=69df3c6b&is=69ddeaeb&hm=87dae9e1110585394bee5e87187ea27e4d5e567fb96ac0ba992fa4df6cf8f99d&"
+            >
+              Download Client
+            </a>
+          </div>
+          <aside class="status-box">
+            <h3>Server Status</h3>
+            <p class="status-line">
+              Live players: <strong id="playerCount">2</strong>
+            </p>
+            <p class="status-line">
+              Region: <strong>NA + EU</strong>
+            </p>
+            <p class="status-line">
+              Last patch: <strong>v0.9.6</strong>
+            </p>
+            <button id="refreshBtn" class="button ghost small">
+              Refresh Count
+            </button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Is this official Epic Games Fortnite?</summary>
+            <p>
+              No, this is a fan-made revival project for nostalgic gameplay and
+              community events.
+            </p>
+          </details>
+          <details>
+            <summary>Can I play with friends?</summary>
+            <p>Yes. Party support is available.</p>
+          </details>
+          <details>
+            <summary>Where do I report bugs?</summary>
+            <p>Use the #bug-reports channel in Discord.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Xeno OG Fortnite</p>
+        <p class="tiny">
+          Fortnite is a trademark of Epic Games. This is an unofficial fan
+          project.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const playerCountEl = document.querySelector("#playerCount");
+      const refreshBtn = document.querySelector("#refreshBtn");
+
+      function formatNumber(value) {
+        return new Intl.NumberFormat("en-US").format(value);
+      }
+
+      function randomizePlayers() {
+        const min = 1800;
+        const max = 2600;
+        const value = Math.floor(Math.random() * (max - min + 1)) + min;
+        playerCountEl.textContent = formatNumber(value);
+      }
+
+      refreshBtn?.addEventListener("click", randomizePlayers);
+    </script>
+  </body>
+</html>
